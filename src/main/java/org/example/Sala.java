@@ -2,7 +2,6 @@ package org.example;
 
 public class Sala {
 
-
     public Sala(String nume, String tip, String etaj, int calculatoare) {
         this.nume = nume;
         this.tip = tip;

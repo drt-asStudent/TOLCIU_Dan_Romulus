@@ -30,9 +30,8 @@ public class Helper {
                 //System.out.println(str);
                 String[] spart = str.split(" ");
 
-                lista.add(new Sala(spart[0], spart[1], spart[2], Integer.getInteger(spart[3])));
+                lista.add(new Sala(spart[0], spart[1], spart[2], Integer.parseInt(spart[3])));
 
-                dis.close();
             }
         }
         catch (IOException ioe) {

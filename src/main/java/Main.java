@@ -12,10 +12,12 @@ public class Main {
     }
 
     public static void Cerinta_1(String fisierul) {
+        System.out.println("1. first request");
+
         Helper h = new Helper();
         List<Sala> salile = h.DinFisier(fisierul);
 
-        String etaj="parter";
+        //String etaj="parter"; No, no, no! U said different.
         List<String> etaje = new ArrayList<>();
         for (Sala a : salile) {
             if (!etaje.contains(a.getEtaj())) {
@@ -28,9 +30,10 @@ public class Main {
 
             for (Sala y : salile) {
                 if (x.equals(y.getEtaj())) {
-                    System.out.println(y.getEtaj());
+                    System.out.println(y.toString());
                 }
             }
         }
+        System.out.println("\n!!! that's how it should be done");
     }
 }
