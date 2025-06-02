@@ -13,28 +13,22 @@ public class Helper {
         FileInputStream fis = null;
         String str = null;
 
-        try
-        {
+        try {
             fis = new FileInputStream(file);
-        }
-        catch (FileNotFoundException fnfe)
-        {
+        } catch (FileNotFoundException fnfe) {
             fnfe.printStackTrace();
         }
 
         DataInputStream dis = new DataInputStream(fis);
 
-        try
-        {
+        try {
             while ((str = dis.readLine()) != null) {
                 //System.out.println(str);
                 String[] spart = str.split(" ");
 
                 lista.add(new Sala(spart[0], spart[1], spart[2], Integer.parseInt(spart[3])));
-
             }
-        }
-        catch (IOException ioe) {
+        } catch (IOException ioe) {
             ioe.printStackTrace();
         }
 

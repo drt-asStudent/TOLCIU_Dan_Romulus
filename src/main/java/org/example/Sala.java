@@ -46,8 +46,9 @@ public class Sala {
 
     @Override
     public String toString() {
-      return nume + " " + tip + " " + etaj + " " + calculatoare;
+        return nume + " " + tip + " " + etaj + " " + calculatoare;
     }
+
     String nume;
     String tip;
     String etaj;
