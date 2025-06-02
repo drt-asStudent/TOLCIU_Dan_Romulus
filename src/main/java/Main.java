@@ -7,7 +7,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        //Cerinta_1("intrare.txt");
+        Cerinta_1("intrare.txt");
         Cerinta_2("intrare.txt");
     }
 
@@ -33,8 +33,9 @@ public class Main {
                     System.out.println(y.toString());
                 }
             }
+            System.out.println("\n");
         }
-        System.out.println("\n!!! that's how it should be done");
+        System.out.println("!!! that's how it should be done\n\n");
     }
 
     public static void Cerinta_2(String fisierul) {
@@ -47,6 +48,5 @@ public class Main {
                 System.out.println(a.toString());
             }
         }
-        System.out.println("\n!!! that's how it should be done");
     }
 }
